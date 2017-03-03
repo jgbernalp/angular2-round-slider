@@ -1,0 +1,59 @@
+round-slider {
+  display: block;
+
+  .round-slider-container {
+    position: relative;
+  }
+
+  .container {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 20;
+  }
+
+  .round-slider-image {
+    background-size: cover;
+    border-radius: 50%;
+    position: absolute;
+  }
+
+  .round-slider-text {
+    text-align: center;
+    position: absolute;
+    width: 100%;
+    display: table-cell;
+    vertical-align: middle;
+    top: 41%;
+    pointer-events: none;
+    z-index: 10;
+    color: white;
+    font-size: 18px;
+  }
+
+  .circumference {
+    &.transparent {
+      fill: transparent;
+    }
+    fill: #f2f2f2;
+  }
+
+  .dot circle:hover {
+    cursor: pointer;
+  }
+
+  .dot circle {
+    fill: lightsteelblue;
+    stroke: lightsteelblue;
+    stroke-width: 1.5px;
+  }
+
+  .dot circle.dragging {
+    fill: steelblue;
+    stroke: steelblue;
+  }
+
+  .arc {
+    fill: steelblue;
+  }
+}
